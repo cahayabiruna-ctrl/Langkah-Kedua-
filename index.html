@@ -17,11 +17,18 @@
       height:100dvh; margin:0;padding:0;
       background:#0b1220;
       font-family:'Roboto',sans-serif;
-      overflow:hidden;
+      overflow:auto; /* 🔹 ubah: biar bisa scroll */
       -webkit-font-smoothing:antialiased;
     }
 
-    .presentation {position:fixed;inset:0;display:flex;align-items:center;justify-content:center;}
+    .presentation {
+      position:fixed;
+      inset:0;
+      display:flex;
+      align-items:flex-start; /* 🔹 ubah: mulai dari atas */
+      justify-content:center;
+      overflow:auto; /* 🔹 biar isi bisa scroll */
+    }
 
     /* Partikel */
     .bg-particles{position:absolute;inset:0;z-index:0;pointer-events:none;}
@@ -79,8 +86,23 @@
       <strong>DV Team Naga Persada</strong>
     </div>
 
-    <!-- Slide (isi tetap sama) -->
-    <!-- ... (SEMUA SLIDE ANDA TIDAK DIUBAH) ... -->
+    <!-- 🔹 Semua slide Anda tetap sama persis -->
+    <!-- Slide 1 -->
+    <section class="slide active"><div class="card"><h1 class="title">Panduan Mengundang Prospek</h1>
+      <p>Mengundang adalah aksi meminta seseorang hadir ke presentasi bisnis. Tujuannya adalah <span class="highlight">membangkitkan minat</span>, <span class="highlight">rasa penasaran</span>, dan <span class="highlight">keinginan hadir</span>. <br><strong><span class="highlight">Ingat: Mengundang ≠ Menjual</span></strong></p>
+    </div></section>
+
+    <!-- Slide 2 -->
+    <section class="slide"><div class="card"><h2 class="title">2. Tujuan Mengundang</h2>
+      <ul>
+        <li><span class="icon">✨</span><span class="highlight">Memperkenalkan prospek</span> pada peluang bisnis.</li>
+        <li><span class="icon">🎯</span><span class="highlight">Membuat prospek tertarik</span> tanpa menjelaskan seluruh materi.</li>
+        <li><span class="icon">🤝</span>Membangun <span class="highlight">hubungan awal</span> dan <span class="highlight">kepercayaan</span>.</li>
+        <li><span class="icon">💡</span>Menyiapkan prospek agar siap menerima informasi lebih lanjut.</li>
+      </ul>
+    </div></section>
+
+    <!-- ... (semua slide lainnya tetap sama persis) ... -->
 
   </div>
 
